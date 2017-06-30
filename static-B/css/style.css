@@ -19,6 +19,80 @@ body{
 div,span,p,ul,ul li,dl,dt,dd,a,h1,h2,h3,h4,h5,h6,img{ margin:0; padding:0; list-style:none; line-height:158%; border:0;}
 a{ color:#fff; text-decoration:none; }
 a:focus{outline:none;}
-a:hover, a:focus{ color: #1dbbc1; text-decoration: none;}
+a:hover, a:focus{ color: #49d9fd; text-decoration: none;}
 dl dd{line-height: inherit;}
 
+.header {
+	height: 73px;
+	padding: 0 20px;
+	background-image: url(img/headBg.png);
+	background-repeat: repeat-x;
+}
+.header .nav {
+	margin-top: 24px;
+}
+.header .nav > li {
+	
+}
+.header .nav > li > a {
+	position: relative;
+	padding: 0 25px;
+	line-height: 43px;
+	color: #49d9fd;
+	font-size: 20px;
+	font-weight: bold;
+	z-index: 10;
+	border-radius: 0;
+}
+.header .nav > li > a:hover,
+.header .nav > li > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+.header .nav > li.active {
+	background-image: url(img/menuRight.png);
+	background-position: right top;
+}
+.header .nav > li.active > a {
+	color: #fff;
+	background-color: transparent;
+	background-image: url(img/menuLeft.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.content {
+	padding: 20px;
+	overflow: hidden;
+}
+.sideLeft {
+	width: 480px;
+}
+.sideRight {
+	width: 360px;
+}
+
+.typeBox {
+	border-top: 3px solid #23569a;
+	background-image: url(img/boxBg.png);
+	background-size: 100% 100%;
+}
+.typeBox .tit {
+	position: relative;
+	padding: 0 20px 0 35px;
+	font-size: 22px;
+	color: #fff;
+	line-height: 50px;
+}
+.typeBox .tit:before {
+	content: "";
+	position: absolute;
+	left: 20px;
+	top: 18px;
+	width: 5px;
+	height: 15px;
+	background-color: #49d9fe;
+}
+.typeBox .sectionMain {
+	padding: 0 20px 20px;
+}
