@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*calendar*/
+#calendar {
+	margin: -15px -20px;
+}
+table.fc-header {
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	width: 520px!important;
+	background-color: transparent;
+}
+.fc-header-title,
+.fc-header-title h2 {
+	margin-top: 0;
+	font-size: 16px;
+	margin-bottom: 0;
+	line-height: 27px;
+}
+.fc-header .fc-button {
+	margin-bottom: 0;
+}
+.fc-header-left {
+	text-align: right;
+}
+.fc-header td {
+	padding: 0;
+}
+.fc-header-title h2 {
+}
+.fc-week .fc-day > div .fc-day-number {
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	padding: 0;
+}
+.fc-border-separate tr.fc-last th {
+	line-height: 39px;
+}
