@@ -19,8 +19,8 @@
 <link href="../css/animate.css" rel="stylesheet" type="text/css" />
 <!-- base css -->
 <link href="../css/base.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="../common/fullcalendar/fullcalendar.css"/>
-	<link rel="stylesheet" href="../common/fullcalendar/fullcalendar.print.css"/>
+<link rel="stylesheet" href="../common/fullcalendar/fullcalendar.css"/>
+<link rel="stylesheet" href="../common/fullcalendar/fullcalendar.print.css"/>
 <!-- master css -->
 <link href="../css/layout.css" rel="stylesheet" type="text/css" />
 <!-- custom css-->
@@ -42,7 +42,7 @@
 		<div class="menuScrollbar side-menu">
 			<ul class="nav" id="side-menu">
 	            <li class="active">
-	                <a href="../index/index.html"><i class="iconfont icon-workbench"></i><span class="nav-label">工作台</span></a>
+	                <a href="javascript:;"><i class="iconfont icon-workbench"></i><span class="nav-label">工作台</span></a>
 	            </li>
 	            <li>
 	                <a href="javascript:;"><i class="iconfont icon-org"></i><span class="nav-label">组织机构</span></a>
@@ -53,13 +53,25 @@
 	            <li>
 	                <a data-toggle="collapse" aria-expanded="false" href="#nav-hidden" class="collapsed">
 	                    <i class="iconfont icon-danger"></i>
-	                    <span class="nav-label">隐患排查</span>
+	                    <span class="nav-label">隐患排查及治理</span>
 	                    <span class="iconfont arrow"></span>
 	                </a>
 	                <ul id="nav-hidden" class="nav nav-second collapse">
 	                	<h1>隐患排查</h1>
-	                    <li><a href="javascript:;">隐患排查1</a></li>
-	                    <li><a href="javascript:;">隐患排查2</a></li>
+	                    <li><a href="javascript:;">检查计划管理</a></li>
+						<li>
+							<a data-toggle="collapse" aria-expanded="false" href="#dangerPre" class="collapsed">
+								隐患排查
+								<span class="iconfont arrow"></span>
+							</a>
+							<ul id="dangerPre" class="nav nav-third collapse">
+								<h1>隐患排查</h1>
+								<li><a href="../module/dangerPrevention/dangerFillIn.html">隐患填报</a></li>
+								<li><a href="javascript:;">隐患登记</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">隐患治理</a></li>
+						<li><a href="javascript:;">台账与统计</a></li>
 	                </ul>
 	            </li>
 	            <li>
@@ -111,7 +123,7 @@
 									<li><a href="javascript:;">27日，国家安监总局副局长徐绍川来济督导调研，市委副书记、市长王忠林陪同。</a></li>
 									<li><a href="javascript:;">27日，国家安监总局副局长徐绍川来济督导调研，市委副书记、市长王忠林陪同。</a></li>
 								</ul>
-							</div> 
+							</div>
 						</div>
 					</div>
 					<div class="col-xs-6">
@@ -143,7 +155,7 @@
 										<a href="javascript:;">广业集团危险源年度检查通知危险源年度检查危险源年度检查危险源年度检查</a>
 									</li>
 								</ul>
-							</div> 
+							</div>
 						</div>
 					</div>
 					<div class="spaceline20"></div>
@@ -216,7 +228,7 @@
 										</a>
 									</li>
 								</ul>
-							</div> 
+							</div>
 						</div>
 					</div>
 					<div class="col-xs-6">
@@ -226,7 +238,7 @@
 							</div>
 							<div class="sectionMain">
 								<div id="calendar"></div>
-							</div> 
+							</div>
 						</div>
 					</div>
 				</div>

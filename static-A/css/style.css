@@ -38,3 +38,159 @@ table.fc-header {
 .fc-border-separate tr.fc-last th {
 	line-height: 39px;
 }
+.border-solid-light{
+	border: solid 1px lightgrey;
+}
+.border-radius-5{
+	border-radius: 5px;
+}
+.border-radius-t5{
+	border-radius: 5px 5px 0 0;
+}
+.formTitle{
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	background-color: #516076;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	padding-left: 15px;
+}
+.formTitle:before{
+	content: "";
+	width: 5px;
+	height: 15px;
+	margin-right: 10px;
+	margin-top: 9px;
+	background-color: white;
+	border-radius: 2px;
+	float: left;
+}
+.formContent{
+	display: inline-block;
+	width: 100%;
+	background: white;
+	color: #666;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	padding: 10px;
+}
+.formContent .formLine{
+	float: left;
+	width: 100%;
+	padding: 5px 0px;
+}
+.formContent .formLine + .formLine{
+	margin-top: 5px;
+}
+.formContent .formLine .formGroup{
+	display: inline-block;
+	float: left;
+}
+.formContent .formLine .formGroup + .formGroup{
+	float: right;
+}
+.formContent .formLine .formGroup>span{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	vertical-align: middle;
+}
+.formContent .formLine .formGroup>select{
+	width: 200px;
+	height: 30px;
+	border-radius: 3px;
+}
+.formContent .formLine .formGroup>input{
+	height: 30px;
+	border-radius: 3px;
+	border: solid 1px #a9a9a9!important;
+	padding: 5px 10px;
+}
+.formContent .formLine .formGroup .wc100p{
+	width: calc(100% - 105px);
+}
+.formContent .formLine .formGroup>input:focus{
+	border: solid 1px #0099CC!important;
+}
+.formContent .formLine .formGroup>textarea{
+	height: 80px;
+	border-radius: 3px;
+	border: solid 1px #a9a9a9!important;
+	padding: 5px 10px;
+}
+.formContent .formLine .formGroup>textarea:focus{
+	border: solid 1px #0099CC!important;
+}
+.pictureBox{
+	display:inline-block;
+	border: solid 1px lightgrey;
+	height: 200px;
+	border-radius: 3px;
+	padding: 10px;
+}
+.relativeBox{
+	float: left;
+	padding: 15px 15px 0 15px;
+	width: 100%;
+	margin-top: 5px;
+	background: #e4e4e4;
+	border-radius: 3px;
+}
+.flex-between{
+	display: flex;
+	justify-content: space-between;
+}
+.btn-large{
+	background: #69778c;
+	padding: 6px 20px;
+	border: solid 1px #69778c;
+	color: white;
+	min-width: 120px;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	border-radius: 3px;
+}
+.btn-large:hover{
+	background: #485569;
+	border: solid 1px #485569;
+}
+.dangerImg{
+	height: 100%;
+	border: solid 1px lightgrey;
+	border-radius: 3px;
+}
+.dangerImg + .dangerImg{
+	margin-left: 10px;
+}
+.addPic{
+	display: inline-block;
+	vertical-align: middle;
+	height: 178px;
+	line-height: 178px;
+	width: 178px;
+	background: #eee;
+	color: #ccc;
+	text-align: center;
+	margin-left: 10px;
+	border-radius: 3px;
+	position: relative;
+	z-index: 2;
+}
+.addPic:hover{
+	cursor: pointer;
+	background: #ddd;
+	color: #fff;
+}
+.imgLoader{
+	display: inline-block;
+	height: 178px;
+	width: 178px;
+	vertical-align: middle;
+	margin-left: -182px;
+	opacity: 0.1;
+	position: relative;
+	z-index: 1;
+}

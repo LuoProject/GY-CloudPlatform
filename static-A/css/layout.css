@@ -293,6 +293,28 @@ body.mini-navbar .side-menu  .nav > li > a > span {
 	color: #ffde00;
 	font-weight: bold;
 }
+
+.side-menu .nav-second .nav-third {
+	padding-bottom: 15px;
+}
+.side-menu .nav-second .nav-third> h1 {
+	display: none;
+}
+.side-menu .nav-second .nav-third> li {
+	border-left: 0;
+}
+.side-menu .nav-second .nav-third> li > a {
+	padding: 0 0 0 82px;
+	font-size: 14px;
+}
+.side-menu .nav-second .nav-third> li > a:hover {
+	color: #ffde00;
+}
+.side-menu  .active .nav-second .nav-third> li.active > a {
+	color: #ffde00;
+	font-weight: bold;
+}
+
 body.mini-navbar .side-menu .nav-second {
 	padding-top: 10px;
 }

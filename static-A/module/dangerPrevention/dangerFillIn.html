@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chorme=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+    <link rel="bookmark" type="image/x-icon" href="../img/favicon.ico" />
+
+    <!-- Bootstrap 3.3.7 -->
+    <link href="../../common/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- iconfont -->
+    <link href="../../common/iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+    <!-- mCustomScrollbar -->
+    <link href="../../common/mCustomScrollbar/css/jquery.mCustomScrollbar.custom.css" rel="stylesheet" type="text/css" />
+    <!-- animate css -->
+    <link href="../../css/animate.css" rel="stylesheet" type="text/css" />
+    <!-- base css -->
+    <link href="../../css/base.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../common/fullcalendar/fullcalendar.css"/>
+    <link rel="stylesheet" href="../../common/fullcalendar/fullcalendar.print.css"/>
+    <!-- master css -->
+    <link href="../../css/layout.css" rel="stylesheet" type="text/css" />
+    <!-- custom css-->
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <!-- dialog custom css -->
+    <link href="../../css/dialog/dialog.custom.css" rel="stylesheet" type="text/css" />
+
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="fixed-sidebar">
+<div class="wrapper">
+    <!--Left Menu Start -->
+    <nav class="navbar-static-side" role="navigation">
+        <div class="logo"></div>
+        <div class="menuScrollbar side-menu">
+            <ul class="nav" id="side-menu">
+                <li class="active">
+                    <a href="../../index/index.html"><i class="iconfont icon-workbench"></i><span class="nav-label">工作台</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="iconfont icon-org"></i><span class="nav-label">组织机构</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="iconfont icon-warn"></i><span class="nav-label">风险管控</span></a>
+                </li>
+                <li>
+                    <a data-toggle="collapse" aria-expanded="false" href="#nav-hidden" class="collapsed">
+                        <i class="iconfont icon-danger"></i>
+                        <span class="nav-label">隐患排查及治理</span>
+                        <span class="iconfont arrow"></span>
+                    </a>
+                    <ul id="nav-hidden" class="nav nav-second collapse">
+                        <h1>隐患排查</h1>
+                        <li><a href="javascript:;">检查计划管理</a></li>
+                        <li>
+                            <a data-toggle="collapse" aria-expanded="false" href="#dangerPre" class="collapsed">
+                                隐患排查
+                                <span class="iconfont arrow"></span>
+                            </a>
+                            <ul id="dangerPre" class="nav nav-third collapse">
+                                <h1>隐患排查</h1>
+                                <li><a href="javascript:;">隐患填报</a></li>
+                                <li><a href="javascript:;">隐患登记</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">隐患治理</a></li>
+                        <li><a href="javascript:;">台账与统计</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="iconfont icon-performance"></i><span class="nav-label">绩效考核</span></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><i class="iconfont icon-platform"></i><span class="nav-label">平台管理</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Left Menu End -->
+    <!--Right Content Start -->
+    <div class="content-wrapper">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-minimalize btn btn-primary " href="javascript:;"><i class="iconfont icon-bars"></i> </a>
+            </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <i class="iconfont icon-usered"></i>
+                </li>
+                <li><span>欢迎你!</span><a class="username" href="javascript:;">张三</a></li>
+                <li>
+                    <a class="iconfont icon-setup" title="设置" href="javascript:;"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:;">修改资料</a></li>
+                        <li><a href="javascript:;">修改密码</a></li>
+                    </ul>
+                </li>
+                <li><a class="iconfont icon-signout" title="退出" href="../login/login.html"></a></li>
+            </ul>
+        </nav>
+        <section class="main-content animated fadeInRight">
+            <div class="content">
+                <!-- Content Start-->
+                <div class="border-solid-light border-radius-5 padding-none">
+                    <div class="formTitle border-radius-t5">责任归属</div>
+                    <div class="formContent">
+                        <div class="formLine flex-between">
+                            <div class="formGroup">
+                                <span>责任单位：</span>
+                                <select>
+                                    <option selected>物资管理部</option>
+                                </select>
+                            </div>
+                            <div class="formGroup">
+                                <span>隐患填报部门：</span>
+                                <select>
+                                    <option selected>物资管理部</option>
+                                    <option>后勤部</option>
+                                    <option>武装部</option>
+                                </select>
+                            </div>
+                            <div class="formGroup">
+                                <span>隐患责任人：</span>
+                                <input type="text" class="w200" placeholder="请输入责任人姓名"/>
+                            </div>
+                        </div>
+                        <!--<div class="formLine">
+                            <div class="formGroup">
+                                <span>隐患责任人：</span>
+                                <input type="text" class="w200" placeholder="请输入责任人姓名"/>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="formTitle">隐患描述</div>
+                    <div class="formContent">
+                        <div class="formLine flex-between">
+                            <div class="formGroup">
+                                <span>隐患级别：</span>
+                                <select>
+                                    <option selected>一般</option>
+                                    <option>重大</option>
+                                </select>
+                            </div>
+                            <div class="formGroup">
+                                <span>隐患发现时间：</span>
+                                <input type="date" class="w200" dataformatas="yyyy-mm-dd"/>
+                            </div>
+                            <div class="formGroup">
+                                <span>隐患位置：</span>
+                                <input type="text" class="w200" placeholder="请输入隐患位置"/>
+                            </div>
+                        </div>
+                        <!--<div class="formLine">
+                            <div class="formGroup w">
+                                <span>隐患位置：</span>
+                                <input type="text" class="w400" placeholder="请输入隐患位置"/>
+                            </div>
+                        </div>-->
+                        <div class="formLine">
+                            <div class="formGroup w">
+                                <span class="vt">隐患描述：</span>
+                                <textarea class="wc100p" placeholder="请描述隐患详情..."></textarea>
+                            </div>
+                        </div>
+                        <div class="formLine mt0">
+                            <div class="formGroup">
+                                <span>整改类型：</span>
+                                <select>
+                                    <option selected>立即整改</option>
+                                    <option>延迟整改</option>
+                                </select>
+                            </div>
+                            <div class="formGroup">
+                                <span>整改期限：</span>
+                                <input type="date" class="w200" dataformatas="yyyy-mm-dd"/>
+                            </div>
+                        </div>
+                        <div class="formLine">
+                            <div class="formGroup w">
+                                <span class="vt">整改要求：</span>
+                                <textarea class="wc100p" placeholder="请输入整改要求..."></textarea>
+                            </div>
+                        </div>
+                        <div class="formLine">
+                            <div class="formGroup w">
+                                <span class="vt">隐患图片：</span>
+                                <div class="wc100p pictureBox">
+                                    <!--<img class="dangerImg" src="../../img/favicon.ico">-->
+                                    <!--<img class="dangerImg" src="../../img/favicon.ico">-->
+                                    <span class="addPic" title="点击添加隐患图片" onclick="addPicture()">
+                                        <i class="iconfont icon-add-o f80"></i>
+                                    </span>
+                                    <input type="file" id="addPicture" class="imgLoader"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formTitle">关联信息</div>
+                    <div class="formContent">
+                        <div class="formLine">
+                            <div class="formGroup">
+                                <span>关联危险源：</span>
+                                <select>
+                                    <option selected>Wxy123</option>
+                                    <option>Wxy456</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="relativeBox">
+                            <div class="formLine flex-between">
+                                <div class="formGroup">
+                                    <span>危险源号：</span>Wxy123
+                                </div>
+                                <div class="formGroup">
+                                    <span>类别：</span>部位类
+                                </div>
+                                <div class="formGroup">
+                                    <span>分类名称：</span>余泥渣土（建筑垃圾）受纳场
+                                </div>
+                                <div class="formGroup">
+                                    <span>风险特征描述：</span>滑坡
+                                </div>
+                                <div class="formGroup">
+                                    <span>分类名称：</span>**市**物业管理有限公司
+                                </div>
+                            </div>
+                            <div class="formLine flex-between">
+                                <div class="formGroup w">
+                                    <span class="vt">潜在风险：</span>
+                                    <div class="wc100p clearfix">
+                                        <li>
+                                            （1）风险点参数：规划库容400万立方米，封场标高95米。实际堆填量583万立方米，实际标
+                                            高已达160米，严重超库容、超高堆填。
+                                        </li>
+                                        <li>
+                                            （2）事故后果预测：①影响范围：下游33栋建筑物（厂房24栋，宿舍楼3栋，私宅6栋）、90
+                                            家企业生产。②影响人员：受纳场下游影响区内共有各类人员、员工4630人，易造成造成②影响人员：受纳场下游影响区内共有各类人员、员工4630人，易造成造成
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc p15">
+                    <button class="btn-large">提 交</button>
+                </div>
+                <!-- Content End -->
+            </div>
+        </section>
+        <footer class="footer tr">
+            版权和数据权归属：广业安全生产云平台　　　技术支持：广东广业开元科技有限公司
+        </footer>
+    </div>
+    <!--Right Content End -->
+</div>
+
+<!-- JQuery 1.11.3 -->
+<script src="../../common/jquery/jquery-2.1.0.js"></script>
+<!--[if lt IE 9]>
+<script src="../../common/jquery/jquery.pseudo.js"></script>
+<![endif]-->
+<!-- Bootstrap 3.3.7 -->
+<script src="../../common/bootstrap/js/bootstrap.js"></script>
+<!-- mCustomScrollbar -->
+<script src="../../common/mCustomScrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- layer v2.0 -->
+<script src="../../common/layer/layer.js"></script>
+<!-- dialog -->
+<script src="../../js/dialog.js"></script>
+<script type="text/javascript" src="../../common/fullcalendar/jquery-ui.custom.min.js" ></script>
+<script src="../../common/fullcalendar/fullcalendar.js"></script>
+<!-- custom -->
+<script src="../../js/normal.custom.js"></script>
+<script>
+
+    function addPicture(){
+        $('#addPicture').click();
+    }
+
+    function getObjectURL(file) {
+        var url = null ;
+        if (window.createObjectURL!=undefined) { // basic
+            url = window.createObjectURL(file) ;
+        } else if (window.URL!=undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file) ;
+        } else if (window.webkitURL!=undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file) ;
+        }
+        return url ;
+    }
+
+    $('#addPicture').on("change",function(){
+        if(!this.files.length) return;
+        var objUrl = getObjectURL(this.files[this.files.length - 1]) ;
+        if (objUrl) {
+            var ele = document.createElement('img');
+            $('.addPic').before(ele);
+            $('.pictureBox>img').last().attr({'src': objUrl, 'class': 'dangerImg'});
+        }
+
+        if($('.pictureBox>img').length>=4) {
+            $('.addPic').hide();
+            $('#addPicture').hide();
+        }
+    });
+
+    $(document).ready(function() {
+
+    });
+
+</script>
+
+</body>
+</html>

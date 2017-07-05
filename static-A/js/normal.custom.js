@@ -30,14 +30,18 @@ $(document).ready(function () {
     });
    
 	//Collapse left menu
-	$('.nav-second').on('show.bs.collapse', function () {
+	/*$('.nav-second').on('show.bs.collapse', function () {
         $('.nav-second.in').collapse('hide');
-    });
+    });*/
     $("#side-menu > li").click(function(){
 		$(this).addClass('active').siblings().removeClass('active');
 	});
-	$(".nav-second > li").click(function(){
+	/*$(".nav-second > li").click(function(){
 		$(".nav-second").find("li").removeClass('active');
+		$(this).addClass('active').siblings().removeClass('active');
+	});*/
+	$(".nav-third > li").click(function(){
+		$(".nav-third").find("li").removeClass('active');
 		$(this).addClass('active').siblings().removeClass('active');
 	});
 });

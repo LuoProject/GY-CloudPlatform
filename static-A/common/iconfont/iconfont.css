@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1498725368683'); /* IE9*/
-  src: url('iconfont.eot?t=1498725368683#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1498725368683') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1498725368683') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1498725368683#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1499224775511'); /* IE9*/
+  src: url('iconfont.eot?t=1499224775511#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1499224775511') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1499224775511') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1499224775511#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -36,6 +36,8 @@
 .icon-org:before { content: "\e608"; }
 
 .icon-journal:before { content: "\e99b"; }
+
+.icon-add-o:before { content: "\e733"; }
 
 .icon-close:before { content: "\e67b"; }
 
